@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Rpungello\APILogger\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class APILoggerCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-api-logger';
 
     public $description = 'My command';
 
