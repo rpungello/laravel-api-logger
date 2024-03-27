@@ -19,7 +19,7 @@ class ApiLoggerServiceProvider extends PackageServiceProvider
             ->name('laravel-api-logger')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_laravel-api-logger_table')
+            ->hasMigration('create_api_log_table')
             ->hasCommand(ApiLoggerCommand::class);
     }
 }

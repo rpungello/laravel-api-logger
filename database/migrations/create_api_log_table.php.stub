@@ -1,0 +1,32 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up(): void
+    {
+        Schema::create('api_log', function (Blueprint $table) {
+            $table->id();
+
+            $table->string('method');
+            $table->string('hostname');
+            $table->string('path');
+            $table->string('query')->nullable();
+            $table->text('body')->nullable();
+            $table->json('headers')->nullable();
+            $table->string('referer')->nullable();
+            $table->ipAddress();
+            $table->string('user_agent');
+            $table->string('server');
+            $table->string('session_id')->nullable();
+            $table->unsignedSmallInteger('status_code')->nullable();
+            $table->text('response')->nullable();
+            $table->unsignedSmallInteger('response_time')->nullable();
+
+            $table->timestamps();
+        });
+    }
+};
