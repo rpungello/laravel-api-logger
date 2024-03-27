@@ -2,9 +2,9 @@
 
 namespace Rpungello\APILogger;
 
+use Rpungello\APILogger\Commands\APILoggerCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Rpungello\APILogger\Commands\APILoggerCommand;
 
 class APILoggerServiceProvider extends PackageServiceProvider
 {
