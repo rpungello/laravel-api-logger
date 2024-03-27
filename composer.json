@@ -31,13 +31,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Rpungello\\APILogger\\": "src/",
-            "Rpungello\\APILogger\\Database\\Factories\\": "database/factories/"
+            "Rpungello\\ApiLogger\\": "src/",
+            "Rpungello\\ApiLogger\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Rpungello\\APILogger\\Tests\\": "tests/",
+            "Rpungello\\ApiLogger\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -69,10 +69,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Rpungello\\APILogger\\APILoggerServiceProvider"
+                "Rpungello\\ApiLogger\\ApiLoggerServiceProvider"
             ],
             "aliases": {
-                "APILogger": "Rpungello\\APILogger\\Facades\\APILogger"
+                "ApiLogger": "Rpungello\\ApiLogger\\Facades\\ApiLogger"
             }
         }
     },

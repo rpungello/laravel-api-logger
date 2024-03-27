@@ -1,12 +1,12 @@
 <?php
 
-namespace Rpungello\APILogger;
+namespace Rpungello\ApiLogger;
 
-use Rpungello\APILogger\Commands\APILoggerCommand;
+use Rpungello\ApiLogger\Commands\ApiLoggerCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class APILoggerServiceProvider extends PackageServiceProvider
+class ApiLoggerServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -20,6 +20,6 @@ class APILoggerServiceProvider extends PackageServiceProvider
             ->hasConfigFile()
             ->hasViews()
             ->hasMigration('create_laravel-api-logger_table')
-            ->hasCommand(APILoggerCommand::class);
+            ->hasCommand(ApiLoggerCommand::class);
     }
 }

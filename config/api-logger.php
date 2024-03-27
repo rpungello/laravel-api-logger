@@ -1,6 +1,6 @@
 <?php
 
-// config for Rpungello/APILogger
+// config for Rpungello/ApiLogger
 return [
 
 ];

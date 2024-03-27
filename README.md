@@ -44,7 +44,7 @@ php artisan vendor:publish --tag="laravel-api-logger-views"
 ## Usage
 
 ```php
-$aPILogger = new Rpungello\APILogger();
+$aPILogger = new Rpungello\ApiLogger();
 echo $aPILogger->echoPhrase('Hello, Rpungello!');
 ```
 

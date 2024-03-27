@@ -1,10 +1,10 @@
 <?php
 
-namespace Rpungello\APILogger\Tests;
+namespace Rpungello\ApiLogger\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Rpungello\APILogger\APILoggerServiceProvider;
+use Rpungello\ApiLogger\ApiLoggerServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,14 +13,14 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Rpungello\\APILogger\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Rpungello\\ApiLogger\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
     protected function getPackageProviders($app)
     {
         return [
-            APILoggerServiceProvider::class,
+            ApiLoggerServiceProvider::class,
         ];
     }
 

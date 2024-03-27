@@ -1,6 +1,6 @@
 <?php
 
-namespace Rpungello\APILogger\Database\Factories;
+namespace Rpungello\ApiLogger\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

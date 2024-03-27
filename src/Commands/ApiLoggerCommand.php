@@ -1,10 +1,10 @@
 <?php
 
-namespace Rpungello\APILogger\Commands;
+namespace Rpungello\ApiLogger\Commands;
 
 use Illuminate\Console\Command;
 
-class APILoggerCommand extends Command
+class ApiLoggerCommand extends Command
 {
     public $signature = 'laravel-api-logger';
 
